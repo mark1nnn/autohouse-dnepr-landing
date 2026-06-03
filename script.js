@@ -76,8 +76,7 @@ const translations = {
     reviews: {
       eyebrow: "Відгуки клієнтів",
       title: "Що кажуть клієнти після ремонту",
-      subtitle:
-        "Відгуки з сайту зберігаються локально. Для публічних Google-відгуків підключіть посилання з Business Profile.",
+      subtitle: "Відгуки клієнтів про сервіс AutoHouse.Dnepr.",
       writeSite: "Написати відгук",
       writeGoogle: "Залишити відгук у Google",
       formTitle: "Ваш відгук",
@@ -87,9 +86,9 @@ const translations = {
       rating: "Оцінка",
       message: "Відгук",
       submit: "Додати відгук",
-      googleNote: "Щоб відгук був видимий у Google, залиште його також у Business Profile.",
+      googleNote: "Залишити відгук у Google.",
       emptyTitle: "Поки що немає відгуків на сайті",
-      emptyText: "Після відправлення форми відгук з’явиться тут. Для Google-відгуків використовуйте кнопку підключеного Business Profile.",
+      emptyText: "Після відправлення форми відгук з’явиться тут.",
       siteBadge: "Відгук із сайту",
       nameError: "Вкажіть ім’я.",
       textError: "Напишіть відгук від 10 символів.",
@@ -218,8 +217,7 @@ const translations = {
     reviews: {
       eyebrow: "Отзывы клиентов",
       title: "Что говорят клиенты после ремонта",
-      subtitle:
-        "Отзывы с сайта сохраняются локально. Для публичных Google-отзывов подключите ссылку из Business Profile.",
+      subtitle: "Отзывы клиентов о сервисе AutoHouse.Dnepr.",
       writeSite: "Написать отзыв",
       writeGoogle: "Оставить отзыв в Google",
       formTitle: "Ваш отзыв",
@@ -229,9 +227,9 @@ const translations = {
       rating: "Оценка",
       message: "Отзыв",
       submit: "Добавить отзыв",
-      googleNote: "Чтобы отзыв был виден в Google, оставьте его также в Business Profile.",
+      googleNote: "Оставить отзыв в Google.",
       emptyTitle: "Пока нет отзывов на сайте",
-      emptyText: "После отправки формы отзыв появится здесь. Для Google-отзывов используйте кнопку подключенного Business Profile.",
+      emptyText: "После отправки формы отзыв появится здесь.",
       siteBadge: "Отзыв с сайта",
       nameError: "Укажите имя.",
       textError: "Напишите отзыв от 10 символов.",
@@ -491,10 +489,10 @@ const state = {
 
 const reviewStorageKey = "autohouse-reviews";
 
-// Fill these fields after the Google Business Profile is confirmed.
+// Fill these fields after the Google listing is confirmed.
 // - placeId: stable Google place identifier for AutoHouse.Dnepr.
 // - mapsEmbedApiKey: Google Maps Embed API key.
-// - reviewUrl: direct "Get more reviews" link from Google Business Profile.
+// - reviewUrl: direct Google review link.
 const googleBusinessConfig = {
   placeId: "",
   mapsEmbedApiKey: "",
