@@ -4,7 +4,7 @@ Generated project images were created with the built-in image generation workflo
 
 ## Hero
 
-Realistic wide photo of a modern auto service repair zone in Dnipro, Ukraine, designed as a website background behind text. Show a white commercial van and a light commercial vehicle inside a professional workshop, mechanics working naturally in the mid/background, vehicle lift, tools, clean but realistic service bay. Very wide 16:9 hero background, main vehicles slightly to the right and center, darker open negative space on the left for readable text overlay, no text, no logos, no watermark, photorealistic.
+Realistic wide photo of a professional auto service workshop in Dnipro, Ukraine, designed as a full-bleed website background behind text. Clearly show three vehicle categories serviced by the shop: a white commercial van, a small light-duty box truck, and a passenger car in a modern repair zone, with mechanics working naturally, lifts, tools, clean but realistic workshop details. Very wide 16:9 hero background, darker open negative space on the left for readable text overlay, no text, no logos, no watermark, photorealistic.
 
 ## Computer diagnostics
 
