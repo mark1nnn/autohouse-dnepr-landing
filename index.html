@@ -22,11 +22,12 @@
     <link rel="apple-touch-icon" href="assets/logo.png?v=3">
     <link rel="preload" as="image" href="assets/hero-van.webp">
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
+    <script type="application/ld+json" data-business-schema>
       {
         "@context": "https://schema.org",
         "@type": "AutoRepair",
         "name": "AutoHouse.Dnepr",
+        "url": "/",
         "telephone": "+380671380812",
         "image": "assets/logo.png",
         "address": {
@@ -38,7 +39,11 @@
           "addressCountry": "UA"
         },
         "areaServed": "Дніпро",
-        "serviceType": "Auto repair"
+        "serviceType": [
+          "Ремонт авто",
+          "Технічне обслуговування авто",
+          "Діагностика авто"
+        ]
       }
     </script>
   </head>
@@ -174,50 +179,21 @@
       </section>
 
       <section class="section section-muted section-observed" id="reviews">
-        <div class="container reviews-layout">
-          <div class="reviews-main">
-            <div class="section-heading align-left">
-              <p class="eyebrow" data-i18n="reviews.eyebrow">Відгуки клієнтів</p>
-              <h2 data-i18n="reviews.title">Що кажуть клієнти після ремонту</h2>
-              <p data-i18n="reviews.subtitle">Відгуки клієнтів про сервіс AutoHouse.Dnepr.</p>
-            </div>
-            <div class="review-grid" id="review-grid" aria-live="polite"></div>
-            <div class="reviews-actions">
-              <a class="btn btn-primary" href="#review-form" data-i18n="reviews.writeSite">Написати відгук</a>
-              <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=AutoHouse.Dnepr%2C%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE" target="_blank" rel="noopener" data-google-review-link data-i18n="reviews.writeGoogle">Залишити відгук у Google</a>
-            </div>
+        <div class="container google-reviews-layout">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="reviews.eyebrow">Відгуки у Google</p>
+            <h2 data-i18n="reviews.title">Відгуки клієнтів у Google</h2>
+            <p data-i18n="reviews.subtitle">Ми цінуємо реальний досвід клієнтів. Перегляньте відгуки про AutoHouse.Dnepr у Google або залиште свій після візиту.</p>
           </div>
-
-          <form class="review-form" id="review-form" novalidate>
-            <h2 data-i18n="reviews.formTitle">Ваш відгук</h2>
-            <div class="form-field">
-              <label for="review-name" data-i18n="reviews.name">Ім’я</label>
-              <input id="review-name" name="reviewName" type="text" autocomplete="name" aria-describedby="review-name-error">
-              <span class="field-error" id="review-name-error" data-review-error-for="name"></span>
-            </div>
-            <div class="form-field">
-              <label for="review-vehicle" data-i18n="reviews.vehicle">Авто</label>
-              <input id="review-vehicle" name="reviewVehicle" type="text" placeholder="Mercedes Vito, Renault Master..." data-i18n-placeholder="reviews.vehiclePlaceholder">
-            </div>
-            <div class="form-field">
-              <label for="review-rating" data-i18n="reviews.rating">Оцінка</label>
-              <select id="review-rating" name="reviewRating">
-                <option value="5">★★★★★</option>
-                <option value="4">★★★★☆</option>
-                <option value="3">★★★☆☆</option>
-                <option value="2">★★☆☆☆</option>
-                <option value="1">★☆☆☆☆</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="review-text" data-i18n="reviews.message">Відгук</label>
-              <textarea id="review-text" name="reviewText" rows="5" aria-describedby="review-text-error"></textarea>
-              <span class="field-error" id="review-text-error" data-review-error-for="text"></span>
-            </div>
-            <!-- For production, send this form to your backend or CRM moderation queue before publishing reviews. -->
-            <button class="btn btn-primary form-submit" type="submit" data-i18n="reviews.submit">Додати відгук</button>
-            <p class="form-status" role="status" aria-live="polite" data-review-status></p>
-          </form>
+          <article class="google-reviews-card">
+            <span class="review-stars" data-i18n="reviews.cardStars" aria-label="Google Reviews">★★★★★</span>
+            <h3 data-i18n="reviews.cardTitle">Реальні відгуки клієнтів</h3>
+            <p data-i18n="reviews.cardText">Відгуки відкриваються у Google Maps, щоб клієнти бачили перевірену інформацію.</p>
+          </article>
+          <div class="reviews-actions">
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=AutoHouse.Dnepr%2C%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE" target="_blank" rel="noopener" data-google-map-link data-i18n="reviews.viewGoogle">Переглянути відгуки</a>
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=AutoHouse.Dnepr%2C%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE" target="_blank" rel="noopener" data-google-review-link data-i18n="reviews.writeGoogle">Залишити відгук у Google</a>
+          </div>
         </div>
       </section>
 
@@ -244,7 +220,7 @@
             <dl class="contact-list">
               <div>
                 <dt data-i18n="contacts.personLabel">Контактна особа</dt>
-                <dd data-i18n="contacts.person">Сурин Сергій Валентинович</dd>
+                <dd data-i18n="contacts.person">Сергій Валентинович</dd>
               </div>
               <div>
                 <dt data-i18n="contacts.phoneLabel">Телефон</dt>
@@ -277,13 +253,14 @@
             </div>
             <div class="form-field">
               <label for="service" data-i18n="form.service">Оберіть послугу</label>
-              <select id="service" name="service"></select>
+              <select id="service" name="service" aria-describedby="service-error"></select>
+              <span class="field-error" id="service-error" data-error-for="service"></span>
             </div>
             <div class="form-field">
               <label for="message" data-i18n="form.message">Повідомлення</label>
               <textarea id="message" name="message" rows="4"></textarea>
             </div>
-            <!-- Connect this submit handler to email, Telegram, Viber, or a backend endpoint in script.js. -->
+            <input type="text" name="website" autocomplete="off" tabindex="-1" class="honeypot" aria-hidden="true">
             <button class="btn btn-primary form-submit" type="submit" data-i18n="form.submit">Надіслати заявку</button>
             <p class="form-status" role="status" aria-live="polite" data-form-status></p>
           </form>
@@ -296,16 +273,23 @@
             <p class="eyebrow" data-i18n="map.eyebrow">Карта</p>
             <h2 id="map-title" data-i18n="map.title">Де нас знайти</h2>
           </div>
-          <div class="map-frame">
-            <!-- Set googleBusinessConfig.placeId and googleBusinessConfig.mapsEmbedApiKey in script.js to bind this map to the Google listing. -->
-            <iframe
-              title="Карта AutoHouse.Dnepr"
-              data-i18n-title="map.frameTitle"
-              data-google-map-frame
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%2C%2049011&output=embed"
-            ></iframe>
+          <div class="map-content">
+            <div class="map-info">
+              <h3 data-i18n="map.profileTitle">AutoHouse.Dnepr на Google Maps</h3>
+              <p data-i18n="map.profileText">Побудуйте маршрут до сервісу, перегляньте профіль компанії або залиште відгук після візиту.</p>
+            </div>
+            <div class="map-frame">
+              <!-- Fill googleBusinessConfig in script.js with the Google Business Place ID and Maps Embed API key to bind this map to the listing. -->
+              <iframe
+                title="Карта AutoHouse.Dnepr"
+                data-i18n-title="map.frameTitle"
+                data-google-map-frame
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%2C%2049011&output=embed"
+              ></iframe>
+            </div>
           </div>
           <div class="map-actions">
             <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=AutoHouse.Dnepr%2C%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE" target="_blank" rel="noopener" data-google-map-link data-i18n="map.openGoogle">Відкрити в Google Maps</a>
