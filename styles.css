@@ -437,11 +437,18 @@ button {
   gap: 10px;
 }
 
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
 .hero-offer {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-top: 22px;
   padding: 12px 14px;
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 12px;
@@ -450,6 +457,34 @@ button {
   font-weight: 850;
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(12px);
+}
+
+.hours-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+}
+
+.hours-badge svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .hero-media {
@@ -864,6 +899,30 @@ button {
   font-weight: 750;
 }
 
+.working-hours {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.working-hours li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.working-hours span {
+  color: #000;
+}
+
+.working-hours span:last-child {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 .request-form {
   display: grid;
   gap: 16px;
@@ -1028,6 +1087,26 @@ button {
 .footer-links a:hover,
 .footer-contact a:hover {
   color: #fff;
+}
+
+.footer-hours {
+  display: grid;
+  gap: 4px;
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-hours strong {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.footer-hours span {
+  color: #c8ced8;
+  font-size: 14px;
+  line-height: 1.35;
 }
 
 .footer-bottom {
@@ -1260,6 +1339,16 @@ button {
     font-size: 14px;
   }
 
+  .hero-badges {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .hero-offer,
+  .hours-badge {
+    max-width: 100%;
+  }
+
   .button-row,
   .contact-buttons,
   .reviews-actions,
@@ -1338,6 +1427,7 @@ button {
   }
 
   .hero-offer,
+  .hours-badge,
   .offer-note {
     align-items: flex-start;
   }

@@ -38,6 +38,14 @@
           "postalCode": "49011",
           "addressCountry": "UA"
         },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
         "areaServed": "Дніпро",
         "serviceType": [
           "Ремонт авто",
@@ -107,9 +115,15 @@
               <a class="btn btn-messenger" href="https://wa.me/380671380812" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
               <a class="btn btn-messenger" href="viber://chat?number=%2B380671380812" aria-label="Viber">Viber</a>
             </div>
-            <div class="hero-offer">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 7 10 17l-5-5"/><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0Z"/></svg>
-              <span data-i18n="hero.offer">При повному ТО — діагностика ходової безкоштовно</span>
+            <div class="hero-badges">
+              <div class="hero-offer">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 7 10 17l-5-5"/><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0Z"/></svg>
+                <span data-i18n="hero.offer">При повному ТО — діагностика ходової безкоштовно</span>
+              </div>
+              <div class="hours-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 7v5l3 2"/><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0Z"/></svg>
+                <span data-i18n="hero.hoursBadge">Працюємо: Пн–Пт 09:00–17:00</span>
+              </div>
             </div>
           </div>
         </div>
@@ -230,6 +244,25 @@
                 <dt data-i18n="contacts.addressLabel">Адреса</dt>
                 <dd data-i18n="contacts.address">Самаркандський провулок, 2, Дніпро, Дніпропетровська область, Україна, 49011</dd>
               </div>
+              <div>
+                <dt data-i18n="contacts.hoursLabel">Графік роботи</dt>
+                <dd>
+                  <ul class="working-hours" aria-label="Графік роботи" data-i18n-aria-label="contacts.hoursLabel">
+                    <li>
+                      <span data-i18n="contacts.hoursWeekdays">Пн–Пт:</span>
+                      <span data-i18n="contacts.hoursOpen">09:00–17:00</span>
+                    </li>
+                    <li>
+                      <span data-i18n="contacts.hoursSaturday">Сб:</span>
+                      <span data-i18n="contacts.hoursClosed">зачинено</span>
+                    </li>
+                    <li>
+                      <span data-i18n="contacts.hoursSunday">Нд:</span>
+                      <span data-i18n="contacts.hoursClosed">зачинено</span>
+                    </li>
+                  </ul>
+                </dd>
+              </div>
             </dl>
             <div class="button-row contact-buttons">
               <a class="btn btn-primary" href="tel:+380671380812" data-i18n="actions.call">Зателефонувати</a>
@@ -318,6 +351,11 @@
         <div class="footer-contact">
           <a href="tel:+380671380812">+380 67 138 08 12</a>
           <span data-i18n="contacts.addressShort">Самаркандський провулок, 2, Дніпро</span>
+          <div class="footer-hours">
+            <strong data-i18n="footer.hoursTitle">Графік роботи:</strong>
+            <span data-i18n="footer.hoursWeekdays">Пн–Пт: 09:00–17:00</span>
+            <span data-i18n="footer.hoursWeekend">Сб–Нд: зачинено</span>
+          </div>
         </div>
       </div>
       <div class="container footer-bottom">

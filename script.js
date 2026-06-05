@@ -45,6 +45,7 @@ const translations = {
       pointParts: "Підбір і замовлення запчастин",
       pointVisit: "Можливий виїзд до клієнта",
       offer: "При повному ТО — діагностика ходової безкоштовно",
+      hoursBadge: "Працюємо: Пн–Пт 09:00–17:00",
       mediaLabel: "Ремонтна зона для бусів, легких вантажних автомобілів і легкових авто"
     },
     about: {
@@ -101,6 +102,12 @@ const translations = {
       phoneLabel: "Телефон",
       addressLabel: "Адреса",
       address: "Самаркандський провулок, 2, Дніпро, Дніпропетровська область, Україна, 49011",
+      hoursLabel: "Графік роботи",
+      hoursWeekdays: "Пн–Пт:",
+      hoursSaturday: "Сб:",
+      hoursSunday: "Нд:",
+      hoursOpen: "09:00–17:00",
+      hoursClosed: "зачинено",
       addressShort: "Самаркандський провулок, 2, Дніпро"
     },
     form: {
@@ -127,6 +134,9 @@ const translations = {
     },
     footer: {
       text: "AutoHouse.Dnepr — діагностика, обслуговування та ремонт бусів, легких вантажних автомобілів і легкових авто у Дніпрі.",
+      hoursTitle: "Графік роботи:",
+      hoursWeekdays: "Пн–Пт: 09:00–17:00",
+      hoursWeekend: "Сб–Нд: зачинено",
       copy: "© 2026 AutoHouse.Dnepr. Усі права захищено."
     },
     alts: {
@@ -180,6 +190,7 @@ const translations = {
       pointParts: "Подбор и заказ запчастей",
       pointVisit: "Возможен выезд к клиенту",
       offer: "При полном ТО — диагностика ходовой бесплатно",
+      hoursBadge: "Работаем: Пн–Пт 09:00–17:00",
       mediaLabel: "Ремонтная зона для бусов, лёгких грузовых автомобилей и легковых авто"
     },
     about: {
@@ -236,6 +247,12 @@ const translations = {
       phoneLabel: "Телефон",
       addressLabel: "Адрес",
       address: "Самаркандский переулок, 2, Днепр, Днепропетровская область, Украина, 49011",
+      hoursLabel: "График работы",
+      hoursWeekdays: "Пн–Пт:",
+      hoursSaturday: "Сб:",
+      hoursSunday: "Вс:",
+      hoursOpen: "09:00–17:00",
+      hoursClosed: "закрыто",
       addressShort: "Самаркандский переулок, 2, Днепр"
     },
     form: {
@@ -262,6 +279,9 @@ const translations = {
     },
     footer: {
       text: "AutoHouse.Dnepr — диагностика, обслуживание и ремонт бусов, лёгких грузовых автомобилей и легковых авто в Днепре.",
+      hoursTitle: "График работы:",
+      hoursWeekdays: "Пн–Пт: 09:00–17:00",
+      hoursWeekend: "Сб–Вс: закрыто",
       copy: "© 2026 AutoHouse.Dnepr. Все права защищены."
     },
     alts: {
@@ -898,6 +918,14 @@ function setupStructuredData() {
       postalCode: "49011",
       addressCountry: "UA"
     },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "17:00"
+      }
+    ],
     areaServed: {
       "@type": "City",
       name: "Дніпро"
