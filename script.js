@@ -511,6 +511,9 @@ const googleBusinessConfig = {
     "https://maps.app.goo.gl/JLrzwr5WQTo3SoWM7"
 };
 
+const canonicalSiteUrl = "https://autohouse.dp.ua/";
+const canonicalLogoUrl = "https://autohouse.dp.ua/assets/logo.png";
+
 function getTranslation(path, lang = state.lang) {
   return path.split(".").reduce((value, key) => (value ? value[key] : undefined), translations[lang]);
 }
@@ -898,18 +901,14 @@ function setupStructuredData() {
   const schemaScript = document.querySelector("[data-business-schema]");
   if (!schemaScript) return;
 
-  const pageUrl = window.location.href.split("#")[0];
-  const siteUrl =
-    window.location.origin && window.location.origin !== "null"
-      ? new URL(window.location.pathname || "/", window.location.origin).href
-      : pageUrl;
   const schema = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     name: "AutoHouse.Dnepr",
-    url: siteUrl,
+    url: canonicalSiteUrl,
     telephone: "+380671380812",
-    image: new URL("assets/logo.png", window.location.href).href,
+    image: canonicalLogoUrl,
+    logo: canonicalLogoUrl,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Самаркандський провулок, 2",

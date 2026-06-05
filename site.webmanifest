@@ -1,0 +1,19 @@
+{
+  "name": "AutoHouse.Dnepr",
+  "short_name": "AutoHouse.Dnepr",
+  "icons": [
+    {
+      "src": "/assets/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#17191d",
+  "background_color": "#f5f6f8",
+  "display": "standalone"
+}

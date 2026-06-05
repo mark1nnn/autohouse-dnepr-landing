@@ -12,6 +12,11 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    if (url.hostname === "www.autohouse.dp.ua") {
+      url.hostname = "autohouse.dp.ua";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/api/contact") {
       return handleContactRequest(request, env);
     }
