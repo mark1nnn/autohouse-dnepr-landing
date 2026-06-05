@@ -18,9 +18,9 @@
     // CONTACT_EMAIL=почта владельца
     // FROM_EMAIL=noreply@домен
     // ALLOWED_ORIGIN=https://домен-сайта
-    "CONTACT_EMAIL": "",
-    "FROM_EMAIL": "",
-    "ALLOWED_ORIGIN": ""
+    "CONTACT_EMAIL": "autohouse.dnepr@gmail.com",
+    "FROM_EMAIL": "AutoHouse.Dnepr <noreply@autohouse.dp.ua>",
+    "ALLOWED_ORIGIN": "https://autohouse.dp.ua , https://www.autohouse.dp.ua"
   },
   // RESEND_API_KEY must be stored as a secret only:
   // wrangler secret put RESEND_API_KEY
