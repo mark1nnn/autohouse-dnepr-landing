@@ -74,26 +74,16 @@ const translations = {
       title: "Зрозумілий шлях від заявки до готового авто"
     },
     reviews: {
-      eyebrow: "Відгуки клієнтів",
-      title: "Що кажуть клієнти після ремонту",
-      subtitle: "Відгуки клієнтів про сервіс AutoHouse.Dnepr.",
-      writeSite: "Написати відгук",
+      eyebrow: "Відгуки у Google",
+      title: "Відгуки клієнтів у Google",
+      subtitle:
+        "Ми цінуємо реальний досвід клієнтів. Перегляньте відгуки про AutoHouse.Dnepr у Google або залиште свій після візиту.",
+      cardStars: "★★★★★",
+      cardTitle: "Реальні відгуки клієнтів",
+      cardText: "Відгуки відкриваються у Google Maps, щоб відображати виключно перевірену інформацію.",
+      viewGoogle: "Переглянути відгуки",
       writeGoogle: "Залишити відгук у Google",
-      formTitle: "Ваш відгук",
-      name: "Ім’я",
-      vehicle: "Авто",
-      vehiclePlaceholder: "Mercedes Vito, Renault Master...",
-      rating: "Оцінка",
-      message: "Відгук",
-      submit: "Додати відгук",
-      googleNote: "Залишити відгук у Google.",
-      emptyTitle: "Поки що немає відгуків на сайті",
-      emptyText: "Після відправлення форми відгук з’явиться тут.",
-      siteBadge: "Відгук із сайту",
-      nameError: "Вкажіть ім’я.",
-      textError: "Напишіть відгук від 10 символів.",
-      success: "Дякуємо! Відгук додано на сайт у цьому браузері.",
-      storageError: "Не вдалося зберегти відгук у браузері. Спробуйте залишити його через Google."
+      googleNote: "Залишити відгук у Google."
     },
     cta: {
       eyebrow: "Зв’язок",
@@ -107,7 +97,7 @@ const translations = {
       eyebrow: "Контакти",
       title: "Контакти AutoHouse.Dnepr",
       personLabel: "Контактна особа",
-      person: "Сурин Сергій Валентинович",
+      person: "Сергій Валентинович",
       phoneLabel: "Телефон",
       addressLabel: "Адреса",
       address: "Самаркандський провулок, 2, Дніпро, Дніпропетровська область, Україна, 49011",
@@ -120,15 +110,19 @@ const translations = {
       service: "Оберіть послугу",
       message: "Повідомлення",
       submit: "Надіслати заявку",
-      success:
-        "Дякуємо! Заявку підготовлено. Для швидкої відповіді зателефонуйте або напишіть у Viber/WhatsApp.",
+      sending: "Відправляємо...",
+      success: "Дякуємо! Заявку відправлено. Ми зв’яжемося з вами найближчим часом.",
+      error: "Не вдалося відправити заявку. Спробуйте ще раз або зателефонуйте нам.",
       nameError: "Вкажіть ім’я.",
-      phoneError: "Вкажіть коректний телефон."
+      phoneError: "Вкажіть телефон від 7 символів.",
+      serviceError: "Оберіть послугу."
     },
     map: {
       eyebrow: "Карта",
       title: "Де нас знайти",
       frameTitle: "Карта AutoHouse.Dnepr",
+      profileTitle: "AutoHouse.Dnepr на Google Maps",
+      profileText: "Побудуйте маршрут до сервісу, перегляньте профіль компанії або залиште відгук після візиту.",
       openGoogle: "Відкрити в Google Maps"
     },
     footer: {
@@ -215,26 +209,16 @@ const translations = {
       title: "Понятный путь от заявки до готового авто"
     },
     reviews: {
-      eyebrow: "Отзывы клиентов",
-      title: "Что говорят клиенты после ремонта",
-      subtitle: "Отзывы клиентов о сервисе AutoHouse.Dnepr.",
-      writeSite: "Написать отзыв",
+      eyebrow: "Отзывы в Google",
+      title: "Отзывы клиентов в Google",
+      subtitle:
+        "Мы ценим реальный опыт клиентов. Посмотрите отзывы об AutoHouse.Dnepr в Google или оставьте свой после визита.",
+      cardStars: "★★★★★",
+      cardTitle: "Реальные отзывы клиентов",
+      cardText: "Отзывы открываются в Google Maps, чтобы показать исключительно проверенную информацию.",
+      viewGoogle: "Посмотреть отзывы",
       writeGoogle: "Оставить отзыв в Google",
-      formTitle: "Ваш отзыв",
-      name: "Имя",
-      vehicle: "Авто",
-      vehiclePlaceholder: "Mercedes Vito, Renault Master...",
-      rating: "Оценка",
-      message: "Отзыв",
-      submit: "Добавить отзыв",
-      googleNote: "Оставить отзыв в Google.",
-      emptyTitle: "Пока нет отзывов на сайте",
-      emptyText: "После отправки формы отзыв появится здесь.",
-      siteBadge: "Отзыв с сайта",
-      nameError: "Укажите имя.",
-      textError: "Напишите отзыв от 10 символов.",
-      success: "Спасибо! Отзыв добавлен на сайт в этом браузере.",
-      storageError: "Не удалось сохранить отзыв в браузере. Попробуйте оставить его через Google."
+      googleNote: "Оставить отзыв в Google."
     },
     cta: {
       eyebrow: "Связь",
@@ -248,7 +232,7 @@ const translations = {
       eyebrow: "Контакты",
       title: "Контакты AutoHouse.Dnepr",
       personLabel: "Контактное лицо",
-      person: "Сурин Сергей Валентинович",
+      person: "Сергей Валентинович",
       phoneLabel: "Телефон",
       addressLabel: "Адрес",
       address: "Самаркандский переулок, 2, Днепр, Днепропетровская область, Украина, 49011",
@@ -261,15 +245,19 @@ const translations = {
       service: "Выберите услугу",
       message: "Сообщение",
       submit: "Отправить заявку",
-      success:
-        "Спасибо! Заявка подготовлена. Для быстрого ответа позвоните или напишите в Viber/WhatsApp.",
+      sending: "Отправляем...",
+      success: "Спасибо! Заявка отправлена. Мы свяжемся с вами в ближайшее время.",
+      error: "Не удалось отправить заявку. Попробуйте ещё раз или позвоните нам.",
       nameError: "Укажите имя.",
-      phoneError: "Укажите корректный телефон."
+      phoneError: "Укажите телефон от 7 символов.",
+      serviceError: "Выберите услугу."
     },
     map: {
       eyebrow: "Карта",
       title: "Где нас найти",
       frameTitle: "Карта AutoHouse.Dnepr",
+      profileTitle: "AutoHouse.Dnepr на Google Maps",
+      profileText: "Постройте маршрут до сервиса, посмотрите профиль компании или оставьте отзыв после визита.",
       openGoogle: "Открыть в Google Maps"
     },
     footer: {
@@ -487,21 +475,20 @@ const state = {
   lang: localStorage.getItem("autohouse-lang") === "ru" ? "ru" : "uk"
 };
 
-const reviewStorageKey = "autohouse-reviews";
-
-// Fill these fields after the Google listing is confirmed.
-// - placeId: stable Google place identifier for AutoHouse.Dnepr.
+// Fill these fields manually after the Google Business Profile is confirmed.
+// - placeId: Google Business Place ID.
 // - mapsEmbedApiKey: Google Maps Embed API key.
-// - reviewUrl: direct Google review link.
+// - googleMapsProfileUrl: public Google Maps profile URL.
+// - googleReviewUrl: direct "Залишити відгук у Google" link.
 const googleBusinessConfig = {
   placeId: "",
   mapsEmbedApiKey: "",
-  reviewUrl: "",
-  googleMapsProfileUrl: "",
+  googleMapsProfileUrl: "https://maps.app.goo.gl/JLrzwr5WQTo3SoWM7",
+  googleReviewUrl: "https://g.page/r/CXGbQsL6ugfJEBM/review",
   fallbackMapEmbedUrl:
-    "https://www.google.com/maps?q=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%2C%2049011&output=embed",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.228273292455!2d35.015054176759755!3d48.45214952920859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe336a10d141b%3A0xc907bafac2429b71!2zQXV0b2hvdXNlIERuZXByINCh0KLQng!5e0!3m2!1sru!2spl!4v1780573251412!5m2!1sru!2spl",
   fallbackMapUrl:
-    "https://www.google.com/maps/search/?api=1&query=AutoHouse.Dnepr%2C%20%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA%202%2C%20%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE"
+    "https://maps.app.goo.gl/JLrzwr5WQTo3SoWM7"
 };
 
 function getTranslation(path, lang = state.lang) {
@@ -519,34 +506,6 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
-}
-
-function getStoredReviews() {
-  try {
-    const reviews = JSON.parse(localStorage.getItem(reviewStorageKey) || "[]");
-    return Array.isArray(reviews) ? reviews : [];
-  } catch {
-    return [];
-  }
-}
-
-function setStoredReviews(reviews) {
-  localStorage.setItem(reviewStorageKey, JSON.stringify(reviews.slice(0, 24)));
-}
-
-function formatReviewDate(value) {
-  const date = value ? new Date(value) : new Date();
-  if (Number.isNaN(date.getTime())) return "";
-  return date.toLocaleDateString(state.lang === "uk" ? "uk-UA" : "ru-RU", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric"
-  });
-}
-
-function renderStars(rating) {
-  const score = Math.max(1, Math.min(5, Number(rating) || 5));
-  return `${"★".repeat(score)}${"☆".repeat(5 - score)}`;
 }
 
 function renderServices() {
@@ -610,44 +569,6 @@ function renderProcess() {
     .join("");
 }
 
-function renderReviews() {
-  const grid = document.getElementById("review-grid");
-  if (!grid) return;
-
-  const reviews = getStoredReviews();
-  if (!reviews.length) {
-    grid.innerHTML = `
-      <article class="review-empty">
-        <h3>${translations[state.lang].reviews.emptyTitle}</h3>
-        <p>${translations[state.lang].reviews.emptyText}</p>
-      </article>
-    `;
-    return;
-  }
-
-  grid.innerHTML = reviews
-    .map((review) => {
-      const rating = Math.max(1, Math.min(5, Number(review.rating) || 5));
-      const vehicle = review.vehicle ? `<span>${escapeHtml(review.vehicle)}</span>` : "";
-
-      return `
-        <article class="review-card">
-          <div class="review-head">
-            <span class="review-stars" aria-label="${rating} / 5">${renderStars(rating)}</span>
-            <span class="review-source">${translations[state.lang].reviews.siteBadge}</span>
-          </div>
-          <p>${escapeHtml(review.text)}</p>
-          <footer>
-            <strong>${escapeHtml(review.name)}</strong>
-            ${vehicle}
-            <time datetime="${escapeHtml(review.createdAt || "")}">${formatReviewDate(review.createdAt)}</time>
-          </footer>
-        </article>
-      `;
-    })
-    .join("");
-}
-
 function renderServiceOptions() {
   const select = document.getElementById("service");
   const langKey = state.lang === "uk" ? "uk" : "ru";
@@ -702,7 +623,6 @@ function renderDynamicContent() {
   renderOffers();
   renderBenefits();
   renderProcess();
-  renderReviews();
   renderServiceOptions();
 }
 
@@ -833,16 +753,27 @@ function bindForm() {
   const form = document.getElementById("request-form");
   const nameInput = document.getElementById("name");
   const phoneInput = document.getElementById("phone");
+  const serviceInput = document.getElementById("service");
+  const messageInput = document.getElementById("message");
+  const websiteInput = form?.querySelector('input[name="website"]');
+  const submitButton = form?.querySelector('button[type="submit"]');
   const status = document.querySelector("[data-form-status]");
-  const phonePattern = /^[+\d\s()-]{5,}$/;
+  let isSubmitting = false;
 
-  form.addEventListener("submit", (event) => {
+  if (!form || !nameInput || !phoneInput || !serviceInput || !messageInput || !submitButton || !status) return;
+
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
+    if (isSubmitting) return;
+
     status.textContent = "";
+    status.removeAttribute("data-state");
     document.querySelectorAll("[data-error-for]").forEach((error) => {
       error.textContent = "";
     });
-    [nameInput, phoneInput].forEach((input) => input.removeAttribute("aria-invalid"));
+    [nameInput, phoneInput, serviceInput].forEach((input) => input.removeAttribute("aria-invalid"));
+
+    if (websiteInput?.value.trim()) return;
 
     let isValid = true;
     if (!nameInput.value.trim()) {
@@ -850,45 +781,89 @@ function bindForm() {
       nameInput.setAttribute("aria-invalid", "true");
       document.querySelector('[data-error-for="name"]').textContent = translations[state.lang].form.nameError;
     }
-    if (!phonePattern.test(phoneInput.value.trim())) {
+
+    if (phoneInput.value.trim().length < 7) {
       isValid = false;
       phoneInput.setAttribute("aria-invalid", "true");
       document.querySelector('[data-error-for="phone"]').textContent = translations[state.lang].form.phoneError;
     }
+
+    if (!serviceInput.value.trim()) {
+      isValid = false;
+      serviceInput.setAttribute("aria-invalid", "true");
+      document.querySelector('[data-error-for="service"]').textContent = translations[state.lang].form.serviceError;
+    }
+
     if (!isValid) return;
 
-    // Connect this point to email, Telegram, Viber, or a backend API when production delivery is ready.
-    status.textContent = translations[state.lang].form.success;
-    form.reset();
-    renderServiceOptions();
+    const payload = {
+      name: nameInput.value.trim(),
+      phone: phoneInput.value.trim(),
+      service: serviceInput.value.trim(),
+      message: messageInput.value.trim(),
+      website: websiteInput?.value.trim() || "",
+      language: state.lang,
+      page: window.location.href
+    };
+
+    isSubmitting = true;
+    submitButton.disabled = true;
+    submitButton.textContent = translations[state.lang].form.sending;
+    status.textContent = translations[state.lang].form.sending;
+    status.dataset.state = "sending";
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+      const data = await response.json().catch(() => null);
+
+      if (!response.ok || !data?.success) {
+        throw new Error("Contact request failed");
+      }
+
+      form.reset();
+      renderServiceOptions();
+      status.textContent = translations[state.lang].form.success;
+      status.dataset.state = "success";
+    } catch {
+      status.textContent = translations[state.lang].form.error;
+      status.dataset.state = "error";
+    } finally {
+      isSubmitting = false;
+      submitButton.disabled = false;
+      submitButton.textContent = translations[state.lang].form.submit;
+    }
   });
 }
 
 function getGoogleMapUrl() {
-  const placeId = googleBusinessConfig.placeId.trim();
-  if (googleBusinessConfig.googleMapsProfileUrl.trim()) {
-    return googleBusinessConfig.googleMapsProfileUrl.trim();
-  }
-  if (placeId) {
-    return `https://www.google.com/maps/search/?api=1&query=AutoHouse.Dnepr&query_place_id=${encodeURIComponent(placeId)}`;
-  }
-  return googleBusinessConfig.fallbackMapUrl;
+  return googleBusinessConfig.googleMapsProfileUrl.trim() || googleBusinessConfig.fallbackMapUrl;
+}
+
+function getGoogleReviewUrl() {
+  return googleBusinessConfig.googleReviewUrl.trim() || getGoogleMapUrl();
 }
 
 function setupGoogleBusiness() {
   const placeId = googleBusinessConfig.placeId.trim();
   const apiKey = googleBusinessConfig.mapsEmbedApiKey.trim();
   const frame = document.querySelector("[data-google-map-frame]");
+  const mapEmbedUrl =
+    placeId && apiKey
+      ? `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(apiKey)}&q=place_id:${encodeURIComponent(placeId)}`
+      : googleBusinessConfig.fallbackMapEmbedUrl;
 
   if (frame) {
-    frame.src =
-      placeId && apiKey
-        ? `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(apiKey)}&q=place_id:${encodeURIComponent(placeId)}`
-        : googleBusinessConfig.fallbackMapEmbedUrl;
+    frame.src = mapEmbedUrl;
   }
 
   const mapUrl = getGoogleMapUrl();
-  const reviewUrl = googleBusinessConfig.reviewUrl.trim() || mapUrl;
+  const reviewUrl = getGoogleReviewUrl();
 
   document.querySelectorAll("[data-google-map-link]").forEach((link) => {
     link.href = mapUrl;
@@ -899,67 +874,49 @@ function setupGoogleBusiness() {
   });
 }
 
-function bindReviewForm() {
-  const form = document.getElementById("review-form");
-  if (!form) return;
+function setupStructuredData() {
+  const schemaScript = document.querySelector("[data-business-schema]");
+  if (!schemaScript) return;
 
-  const nameInput = document.getElementById("review-name");
-  const vehicleInput = document.getElementById("review-vehicle");
-  const ratingInput = document.getElementById("review-rating");
-  const textInput = document.getElementById("review-text");
-  const status = document.querySelector("[data-review-status]");
+  const pageUrl = window.location.href.split("#")[0];
+  const siteUrl =
+    window.location.origin && window.location.origin !== "null"
+      ? new URL(window.location.pathname || "/", window.location.origin).href
+      : pageUrl;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    name: "AutoHouse.Dnepr",
+    url: siteUrl,
+    telephone: "+380671380812",
+    image: new URL("assets/logo.png", window.location.href).href,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Самаркандський провулок, 2",
+      addressLocality: "Дніпро",
+      addressRegion: "Дніпропетровська область",
+      postalCode: "49011",
+      addressCountry: "UA"
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Дніпро"
+    },
+    serviceType: services.map((service) => service.ukTitle)
+  };
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    status.textContent = "";
+  const googleProfileUrl = googleBusinessConfig.googleMapsProfileUrl.trim();
+  if (googleProfileUrl) {
+    schema.sameAs = [googleProfileUrl];
+  }
 
-    document.querySelectorAll("[data-review-error-for]").forEach((error) => {
-      error.textContent = "";
-    });
-    [nameInput, textInput].forEach((input) => input.removeAttribute("aria-invalid"));
-
-    const name = nameInput.value.trim();
-    const text = textInput.value.trim();
-    let isValid = true;
-
-    if (!name) {
-      isValid = false;
-      nameInput.setAttribute("aria-invalid", "true");
-      document.querySelector('[data-review-error-for="name"]').textContent = translations[state.lang].reviews.nameError;
-    }
-
-    if (text.length < 10) {
-      isValid = false;
-      textInput.setAttribute("aria-invalid", "true");
-      document.querySelector('[data-review-error-for="text"]').textContent = translations[state.lang].reviews.textError;
-    }
-
-    if (!isValid) return;
-
-    const reviews = getStoredReviews();
-    const review = {
-      id: window.crypto?.randomUUID?.() || `review-${Date.now()}`,
-      name,
-      vehicle: vehicleInput.value.trim(),
-      rating: ratingInput.value,
-      text,
-      createdAt: new Date().toISOString()
-    };
-
-    try {
-      setStoredReviews([review, ...reviews]);
-      form.reset();
-      renderReviews();
-      status.textContent = translations[state.lang].reviews.success;
-    } catch {
-      status.textContent = translations[state.lang].reviews.storageError;
-    }
-  });
+  schemaScript.textContent = JSON.stringify(schema, null, 2);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   setLanguage(state.lang);
   setupGoogleBusiness();
+  setupStructuredData();
   bindMenu();
   bindLanguageSwitch();
   bindAnchors();
@@ -967,5 +924,4 @@ document.addEventListener("DOMContentLoaded", () => {
   bindActiveNav();
   bindRevealAnimations();
   bindForm();
-  bindReviewForm();
 });

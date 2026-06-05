@@ -120,8 +120,7 @@ button {
 .section-copy,
 .about-media,
 .contact-panel,
-.request-form,
-.review-form {
+.request-form {
   min-width: 0;
 }
 
@@ -541,7 +540,6 @@ button {
 .section-copy h2,
 .contact-panel h2,
 .request-form h2,
-.review-form h2,
 .cta-inner h2 {
   margin: 0;
   font-size: 40px;
@@ -591,11 +589,9 @@ button {
 .offer-card,
 .benefit-card,
 .process-card,
-.review-card,
-.review-empty,
+.google-reviews-card,
 .contact-panel,
-.request-form,
-.review-form {
+.request-form {
   border: 1px solid rgba(217, 221, 228, 0.86);
   border-radius: var(--radius);
   background: var(--surface);
@@ -760,39 +756,32 @@ button {
   font-weight: 900;
 }
 
-.reviews-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.48fr);
-  align-items: start;
-  gap: 24px;
-}
-
-.reviews-main {
-  min-width: 0;
-}
-
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.review-card,
-.review-empty,
-.review-form {
+.google-reviews-card {
   padding: 24px;
 }
 
-.review-card {
+.google-reviews-layout {
   display: grid;
-  gap: 18px;
+  gap: 22px;
+  justify-items: center;
 }
 
-.review-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.google-reviews-card {
+  width: min(100%, 720px);
+  display: grid;
   gap: 12px;
+  text-align: center;
+}
+
+.google-reviews-card h3 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.18;
+}
+
+.google-reviews-card p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .review-stars {
@@ -800,55 +789,6 @@ button {
   font-size: 20px;
   line-height: 1;
   white-space: nowrap;
-}
-
-.review-source {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  padding: 5px 9px;
-  border-radius: 8px;
-  background: var(--blue-soft);
-  color: var(--blue);
-  font-size: 12px;
-  font-weight: 850;
-  line-height: 1.1;
-  white-space: nowrap;
-}
-
-.review-card p,
-.review-empty p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.review-card footer {
-  display: grid;
-  gap: 3px;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
-}
-
-.review-card footer strong {
-  font-size: 18px;
-  line-height: 1.2;
-}
-
-.review-card footer span,
-.review-card footer time {
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.review-empty {
-  grid-column: 1 / -1;
-}
-
-.review-empty h3 {
-  margin: 0 0 8px;
-  font-size: 22px;
-  line-height: 1.2;
 }
 
 .reviews-actions,
@@ -859,17 +799,9 @@ button {
   margin-top: 18px;
 }
 
-.review-form {
-  display: grid;
-  gap: 16px;
-  position: sticky;
-  top: calc(var(--header-height) + 18px);
-}
-
-.google-review-note {
-  color: var(--blue);
-  font-weight: 800;
-  line-height: 1.35;
+.google-reviews-layout .reviews-actions {
+  justify-content: center;
+  margin-top: 0;
 }
 
 .cta-band {
@@ -904,8 +836,7 @@ button {
 }
 
 .contact-panel,
-.request-form,
-.review-form {
+.request-form {
   padding: 26px;
 }
 
@@ -965,6 +896,7 @@ button {
 }
 
 .form-field input[aria-invalid="true"],
+.form-field select[aria-invalid="true"],
 .form-field textarea[aria-invalid="true"] {
   border-color: var(--red);
 }
@@ -980,11 +912,32 @@ button {
   width: 100%;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+  transform: none;
+}
+
 .form-status {
   min-height: 24px;
   margin: 0;
   color: var(--blue);
   font-weight: 800;
+}
+
+.form-status[data-state="error"] {
+  color: var(--red);
+}
+
+.form-status[data-state="success"] {
+  color: var(--blue);
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .map-section {
@@ -997,6 +950,37 @@ button {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
+}
+
+.map-content {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.36fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 18px;
+}
+
+.map-info {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 24px;
+  border-left: 5px solid var(--red);
+  background: var(--surface-soft);
+}
+
+.map-info h3,
+.map-info p {
+  margin: 0;
+}
+
+.map-info h3 {
+  font-size: 24px;
+  line-height: 1.18;
+}
+
+.map-info p {
+  color: var(--muted);
+  font-size: 17px;
 }
 
 .map-frame iframe {
@@ -1198,12 +1182,8 @@ button {
 
   .split,
   .contact-layout,
-  .reviews-layout {
+  .map-content {
     grid-template-columns: 1fr;
-  }
-
-  .review-form {
-    position: static;
   }
 
   .services-grid,
@@ -1261,7 +1241,6 @@ button {
   .section-copy h2,
   .contact-panel h2,
   .request-form h2,
-  .review-form h2,
   .cta-inner h2 {
     font-size: 32px;
   }
@@ -1270,8 +1249,7 @@ button {
   .services-grid,
   .offer-grid,
   .benefit-grid,
-  .process-grid,
-  .review-grid {
+  .process-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1298,6 +1276,10 @@ button {
 
   .map-frame iframe {
     height: 340px;
+  }
+
+  .map-info {
+    padding: 20px;
   }
 
   .footer-grid {
@@ -1363,11 +1345,9 @@ button {
   .offer-card,
   .benefit-card,
   .process-card,
-  .review-card,
-  .review-empty,
+  .google-reviews-card,
   .contact-panel,
-  .request-form,
-  .review-form {
+  .request-form {
     padding: 18px;
   }
 
