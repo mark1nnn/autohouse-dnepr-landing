@@ -348,7 +348,7 @@ button {
 }
 
 .hero::before {
-  background: url("assets/hero-van.webp") center right / cover no-repeat;
+  background: url("/assets/hero-van.webp") center right / cover no-repeat;
   transform: scale(1.01);
 }
 

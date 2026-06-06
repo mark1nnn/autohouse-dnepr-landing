@@ -294,7 +294,7 @@ const translations = {
 const services = [
   {
     icon: "scan",
-    image: "assets/service-diagnostics.webp",
+    image: "/assets/service-diagnostics.webp",
     ukAlt: "Комп’ютерна діагностика комерційного авто",
     ruAlt: "Компьютерная диагностика коммерческого авто",
     ukTitle: "Комп’ютерна діагностика",
@@ -304,7 +304,7 @@ const services = [
   },
   {
     icon: "wrench",
-    image: "assets/service-suspension.webp",
+    image: "/assets/service-suspension.webp",
     ukAlt: "Ремонт ходової частини на підйомнику",
     ruAlt: "Ремонт ходовой части на подъемнике",
     ukTitle: "Діагностика та ремонт ходової частини",
@@ -314,7 +314,7 @@ const services = [
   },
   {
     icon: "drop",
-    image: "assets/service-oil.webp",
+    image: "/assets/service-oil.webp",
     ukAlt: "Заміна оливи та фільтрів у сервісній зоні",
     ruAlt: "Замена масла и фильтров в сервисной зоне",
     ukTitle: "Заміна оливи та фільтрів",
@@ -324,7 +324,7 @@ const services = [
   },
   {
     icon: "engine",
-    image: "assets/service-engine.webp",
+    image: "/assets/service-engine.webp",
     ukAlt: "Ремонт двигуна комерційного авто",
     ruAlt: "Ремонт двигателя коммерческого авто",
     ukTitle: "Ремонт ДВЗ",
@@ -336,7 +336,7 @@ const services = [
   },
   {
     icon: "snow",
-    image: "assets/service-ac.webp",
+    image: "/assets/service-ac.webp",
     ukAlt: "Обслуговування системи автокондиціонування",
     ruAlt: "Обслуживание системы автокондиционирования",
     ukTitle: "Обслуговування та ремонт систем автокондиціонування",
@@ -346,7 +346,7 @@ const services = [
   },
   {
     icon: "spark",
-    image: "assets/service-body.webp",
+    image: "/assets/service-body.webp",
     ukAlt: "Зварювальні та рихтувальні роботи в майстерні",
     ruAlt: "Сварочные и рихтовочные работы в мастерской",
     ukTitle: "Зварювальні та рихтувальні роботи",
@@ -356,7 +356,7 @@ const services = [
   },
   {
     icon: "brake",
-    image: "assets/service-brakes.webp",
+    image: "/assets/service-brakes.webp",
     ukAlt: "Обслуговування гальмівної системи",
     ruAlt: "Обслуживание тормозной системы",
     ukTitle: "Обслуговування гальмівної системи",
@@ -366,7 +366,7 @@ const services = [
   },
   {
     icon: "belt",
-    image: "assets/service-timing.webp",
+    image: "/assets/service-timing.webp",
     ukAlt: "Заміна ременя ГРМ у двигуні",
     ruAlt: "Замена ремня ГРМ в двигателе",
     ukTitle: "Заміна ГРМ",
@@ -376,7 +376,7 @@ const services = [
   },
   {
     icon: "shield",
-    image: "assets/service-anticorrosion.webp",
+    image: "/assets/service-anticorrosion.webp",
     ukAlt: "Антикорозійна обробка днища комерційного авто",
     ruAlt: "Антикоррозийная обработка днища коммерческого авто",
     ukTitle: "Антикорозійна обробка кузова",
