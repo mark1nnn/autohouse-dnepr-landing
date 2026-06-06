@@ -12,7 +12,7 @@ Cloudflare Pages settings:
 - Build command: `exit 0`
 - Build output directory: `public`
 
-Create these environment variables in Cloudflare Pagesssss:
+Create these environment variables in Cloudflare Pages:
 
 - `RESEND_API_KEY`
 - `CONTACT_EMAIL`
