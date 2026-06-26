@@ -624,6 +624,7 @@ button {
 .offer-card,
 .benefit-card,
 .process-card,
+.faq-item,
 .google-reviews-card,
 .contact-panel,
 .request-form {
@@ -664,18 +665,31 @@ button {
   pointer-events: none;
 }
 
-.service-card h3 {
+.service-card-content {
   position: absolute;
   left: 18px;
   right: 18px;
   bottom: 18px;
   z-index: 1;
+  display: grid;
+  gap: 8px;
+}
+
+.service-card h3 {
   margin: 0;
   color: #fff;
   font-size: 22px;
   line-height: 1.18;
   letter-spacing: 0;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.service-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  line-height: 1.38;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.48);
 }
 
 .benefit-icon,
@@ -718,7 +732,8 @@ button {
 
 .offer-grid,
 .benefit-grid,
-.process-grid {
+.process-grid,
+.faq-grid {
   display: grid;
   gap: 18px;
 }
@@ -729,7 +744,8 @@ button {
 
 .offer-card,
 .benefit-card,
-.process-card {
+.process-card,
+.faq-item {
   padding: 22px;
 }
 
@@ -783,6 +799,22 @@ button {
 
 .process-card {
   position: relative;
+}
+
+.faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.faq-item h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.28;
+  letter-spacing: 0;
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .process-number {
@@ -873,6 +905,12 @@ button {
 .contact-panel,
 .request-form {
   padding: 26px;
+}
+
+.contact-panel > p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 17px;
 }
 
 .contact-list {
@@ -1328,7 +1366,8 @@ button {
   .services-grid,
   .offer-grid,
   .benefit-grid,
-  .process-grid {
+  .process-grid,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1435,6 +1474,7 @@ button {
   .offer-card,
   .benefit-card,
   .process-card,
+  .faq-item,
   .google-reviews-card,
   .contact-panel,
   .request-form {
